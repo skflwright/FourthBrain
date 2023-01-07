@@ -7,13 +7,24 @@
 
 # Creating a Simple Web App with FastAPI!
 
+<<<<<<< HEAD
+=======
+Make sure you've completed the `hugging_face_tutorial.ipynb` notebook before you move on to these steps.
+
+>>>>>>> 246ef8a5e00ef3fdec5d8736d02d9e066943f171
 You'll notice that in this folder, we don't have a whole lot. Just a single directory called `app` with an `app.py` and a `model` directory with our saved model. 
 
 Let's check out the `app.py` file. 
 
+<<<<<<< HEAD
 ## PART 1: Creating a Simple Web App with FastAPI
 
 ### 1.1: Running the Web App
+=======
+## PART 3: Creating a Simple Web App with FastAPI
+
+### 3.1: Running the Web App
+>>>>>>> 246ef8a5e00ef3fdec5d8736d02d9e066943f171
 
 
 Let's take a look at the `app.py` file.
@@ -55,7 +66,11 @@ If you CTRL+click on the link, you should see the following in your browser:
 {"message": "Hello World"}
 ```
 
+<<<<<<< HEAD
 ### 1.2: Adding a GET request
+=======
+### 3.2: Adding a GET request
+>>>>>>> 246ef8a5e00ef3fdec5d8736d02d9e066943f171
 
 
 Let's add a GET request to our web app. We'll add a new function called `ping` that will return a simple message. 
@@ -89,7 +104,11 @@ def ping():
 
 This is the function that will be executed when the GET request is made. It simply returns a JSON object with a message of "pong". Thanks to the hard work of the FastAPI team, we don't have to worry about converting this to JSON - it's done for us!
 
+<<<<<<< HEAD
 ### 1.3: Adding a POST request
+=======
+### 3.3: Adding a POST request
+>>>>>>> 246ef8a5e00ef3fdec5d8736d02d9e066943f171
 
 Let's add a POST request to our web app. We'll add a new function called `echo` that will take in a string and return it back to us. 
 
@@ -137,7 +156,11 @@ if __name__ == "__main__":
 ```
 </details>
 
+<<<<<<< HEAD
 ### 1.4 Pydantic Models
+=======
+### 3.4 Pydantic Models
+>>>>>>> 246ef8a5e00ef3fdec5d8736d02d9e066943f171
 
 You'll notice that we have a `message` parameter in our `echo` function. This is a string that we're expecting to be sent to the server. 
 
@@ -218,7 +241,11 @@ if __name__ == "__main__":
 ```
 </details>
 
+<<<<<<< HEAD
 ### 1.5: Adding our local pipeline to the web app
+=======
+### 3.5: Adding our local pipeline to the web app
+>>>>>>> 246ef8a5e00ef3fdec5d8736d02d9e066943f171
 
 Now that we have a basic grasp of how FastAPI works, let's add our local pipeline to our web app! 
 
@@ -228,18 +255,30 @@ First things first, we want to load this pipeline only once when the server star
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+<<<<<<< HEAD
 pipeline = # complete this line with the code to load the pipeline from the local file
+=======
+pipeline = # complete this line with the code to load the pipeline from the local files (path to model directory for 
+>>>>>>> 246ef8a5e00ef3fdec5d8736d02d9e066943f171
 
 app = FastAPI()
 ```
 
+<<<<<<< HEAD
 ### 1.6: Adding a POST request to translate using our pipeline
+=======
+### 3.6: Adding a POST request to translate using our pipeline
+>>>>>>> 246ef8a5e00ef3fdec5d8736d02d9e066943f171
 
 Now that we have our pipeline loaded, we can add a new POST request to our web app that will use our pipeline to translate the text we send to it!
 
 Go ahead and work with your partner to add this new POST request to your web app and test it out using the Swagger UI!
 
+<<<<<<< HEAD
 ### 1.7: Batch Translation with a POST request
+=======
+### 3.7: Batch Translation with a POST request
+>>>>>>> 246ef8a5e00ef3fdec5d8736d02d9e066943f171
 
 Now that we have a POST request that can translate a single string, let's add a new POST request that can translate a list of strings!
 
@@ -257,7 +296,11 @@ Now that we're on our new branch, we can add our new feature!
 2. Add a new POST request to your web app that takes in a `TextsToTranslate` object and returns a list of translated strings.
 3. Test out your new POST request using the Swagger UI!
 
+<<<<<<< HEAD
 ### 1.8: Merging our new feature into the main branch
+=======
+### 3.8: Merging our new feature into the main branch
+>>>>>>> 246ef8a5e00ef3fdec5d8736d02d9e066943f171
 
 Now that we've added our new feature, we want to merge it into the main branch.
 
