@@ -13,6 +13,7 @@ class TextToTranslate(BaseModel):
 def index():
     return {"message": "Hello World"}
 
+
 @app.get("/ping")
 def ping():
     return {"message": "pong"}
@@ -47,7 +48,9 @@ if __name__ == "__main__":
     uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
 
 
+
 #pipeline = # complete this line with the code to load the pipeline from the local files (path to model directory f
 #translator('fast_api_tutorial/app/model/'+ 'my_awesome_model')
 #pipeline = translator('fast_api_tutorial/app/model/' + 'my_awesome_model') #"translation_en_to_de", model = 'T5-base')
+
 
