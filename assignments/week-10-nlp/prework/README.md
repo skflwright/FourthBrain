@@ -9,7 +9,8 @@ Today you are a machine learning engineer, a member of Birdwatch at Twitter.
 
 The objective of this task is to detect hate speech in tweets. 
 For the sake of simplicity, here a tweet contains hate speech if it has a racist or sexist sentiment associated with it. 
-In other words, we need to classify racist or sexist tweets from other tweets.
+In other words, we need to classify racist or 
+sexist tweets from other tweets.
 
 A labelled dataset of 31,962 tweets is provided in the form of a compressed csv file with each line storing a tweet id, its label, and the tweet. 
 Label '1' denotes the tweet is racist/sexist while label '0' denotes the tweet is not racist/sexist.
