@@ -437,12 +437,12 @@ Let's just output the forecast in JSON. Comment out the following lines in `pred
 11. Now find the Public IPv4 address for your instance, e.g., 35.90.247.255, and run the following in another shell on your local machine:
 
     ```
-    curl \
-    --header "Content-Type: application/json" \
-    --request POST \
-    --data '{"ticker":"MSFT", "days":7}' \
-    http://35.90.247.255:8000/predict
-    ```
+  curl \
+--header "Content-Type: application/json" \
+--request POST \
+--data '{"ticker":"MSFT", "days":7}' \
+http://52.90.90.237:8000/predict
+    ```  # my local link above
 
     You shall see the predictions 🎉🎉🎉
 
@@ -495,4 +495,4 @@ Note. As a machine learning engineering, consider to follow a 20/80 rule when it
 
 - This assignment is adapted from [Deploying and Hosting a Machine Learning Model with FastAPI and Heroku](https://testdriven.io/blog/fastapi-machine-learning/)
 - To learn about API in general, [Postman Learning Center](https://learning.postman.com/docs/getting-started/introduction/) is a good starting point.
-- [Machine Learning Operations (MLOps): Overview, Definition, and Architecture (July 2022)](https://arxiv.org/ftp/arxiv/papers/2205/2205.02302.pdf)
+- [Machine Learning Operations (MLOps): Overview, Definition, and Architecture (July 2022)](https://arxiv.org/ftp/arxiv/papers/2205/2205.02302.pdf)# stock-predictor

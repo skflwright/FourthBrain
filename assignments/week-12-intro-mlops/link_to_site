@@ -1,0 +1,7 @@
+curl \
+--header "Content-Type: application/json" \
+--request POST \
+--data '{"ticker":"MSFT", "days":7}' \
+http://52.90.90.237:8000/predict
+
+#http://52.90.90.237:8000/docs
