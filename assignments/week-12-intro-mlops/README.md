@@ -442,7 +442,7 @@ Let's just output the forecast in JSON. Comment out the following lines in `pred
 --request POST \
 --data '{"ticker":"MSFT", "days":7}' \
 http://52.90.90.237:8000/predict
-    ```  # my local link above
+    ```  # my local link here
 
     You shall see the predictions 🎉🎉🎉
 
@@ -490,6 +490,35 @@ Note. As a machine learning engineering, consider to follow a 20/80 rule when it
 <p align="center">
 <img src="img/sebastian-ramirez.jpg" alt="drawing" width="400"/>
 </p>
+
+# Answers to Canvas Questions:
+Algorithm Understanding
+How does the Prophet Algorithm differ from an LSTM? 
+Answer: Both are time series algorithms but Prophet is based on an addititive regression model in which non-linear trends (weather, location, etc.) are fit with yearly, weekly, and daily seasonality and LSTM is a recurring neural network that learns patterns by updating internal states, which means it takes longer and possibly entails greater cost. 
+Why does an LSTM have poor performance against ARIMA and Profit for Time Series?
+Answer: LSTM requires more training to learn temporal patterns (so computationally expensive) and LSTM might not be able to capture seasonal as[ects like holidays] the way Prophet or ARIMA, which were designed for seasonal analysis would.
+xponential smoothing is a time series forecasting method that is widely used in statistics and data analysis. It is based on the idea of giving more weight to recent observations in a time series, and gradually decreasing the weight given to older observations.
+
+Interview Readiness: 
+
+What is exponential smoothing and why is it used in Time Series Forecasting?
+
+The main idea behind exponential smoothing is to generate a smoothed series of values that reflects the underlying trend and seasonality in the data, while minimizing the effects of noise and random fluctuations. The method is called "exponential" smoothing because the weights (0-1) given to the observations decrease exponentially over time. Exponential smoothing is used in time series forecasting because it can provide accurate and robust forecasts for a wide range of data sets.
+
+
+What is stationarity? What is seasonality? Why Is Stationarity Important in Time Series Forecasting?
+
+Stationarity refers to a property of time series data in which the the mean and variance remain constant over time so it doesn't reflect long-term trends and the fluctuations in the data are purely random.
+
+Seasonality refers to a repeating pattern in time series data that repeats itself over fixed intervals, such as daily, weekly, or monthly. 
+
+Stationarity is important in time series forecasting because many forecasting methods, such as ARIMA and exponential smoothing, rely on the assumption that the data is stationary. If the data is not stationary, then these methods may produce inaccurate or unreliable forecasts.
+
+How is seasonality different from cyclicality? Fill in the blanks:
+Seasonality is predictable, whereas cyclicality is not. 
+Cyclicality is not as consistent, is associated more with business and hence less predictable.
+
+
 
 # Acknowledgement & Reference
 
