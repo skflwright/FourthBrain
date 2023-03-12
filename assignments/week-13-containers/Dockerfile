@@ -17,9 +17,7 @@ RUN pip install --no-cache-dir -U pystan
 COPY requirements.txt .
 RUN pip install --no-cache-dir -U -r  requirements.txt
 
-
-
-COPY src/ .
+COPY /src .
 
 EXPOSE 8000
 
