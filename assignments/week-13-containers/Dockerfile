@@ -14,14 +14,16 @@ RUN pip install --no-cache-dir -U cython
 RUN pip install --no-cache-dir -U numpy
 RUN pip install --no-cache-dir -U pystan
 
-COPY requirements.txt .
+COPY src/requirements.txt .
 RUN pip install --no-cache-dir -U -r  requirements.txt
 
-COPY /src .
+COPY src/ .
 
 EXPOSE 8000
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port 8000"]
+#CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+
+CMD uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 
 
