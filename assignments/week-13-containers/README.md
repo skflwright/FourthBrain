@@ -272,3 +272,24 @@ Note that the second command requires `vim`.
     Stopped container mycontainer
     ```
 
+## Questions & Answers for Homework 13: 
+Interview Readiness:
+# What does it mean to create a Docker image and why do we use Docker images?
+
+Creating a Docker image means packaging an application or service along with all its dependencies, libraries, and configurations into a portable, self-contained unit. Docker images are used to run containers, or isolated environments, that run applications consistently across different environments, from development to production.
+
+We use docker images to achieve portability so it can move from one environment to another seamlessly, for internal consistency across its development lifecycle, to achieve scalability and efficiency.
+
+This criterion is linked to a Learning OutcomeInterview Readiness:
+# Please explain what is the difference from a Container vs a Virtual Machine?
+Containers are built on top of a single host operating system and share the host's kernel, while VMs emulate an entire operating system and run on top of a hypervisor. VM's take up more resources because they are mini operating systems, VMs are more secure in that they run in their own isolated environment (which is also why they are slower than containers - containers don't require an operating system)
+
+This criterion is linked to a Learning OutcomeInterview Readiness:
+# What are 5 examples of container orchestration tools (please list tools)?
+Kubernetes, Docker Swarm, OpenShift, Amazon ECS, and Nomad
+
+# How does a Docker image differ from a Docker container?
+A Docker image is a static package that contains everything needed to run a piece of software (code, library and dependencies), while a Docker container is a running instance of that image, with its own state and configuration. Docker images are designed to be portable and shareable, while Docker containers are designed to be easily created and destroyed.
+
+
+
