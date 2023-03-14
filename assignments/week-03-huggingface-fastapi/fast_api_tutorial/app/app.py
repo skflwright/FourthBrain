@@ -1,3 +1,20 @@
+from fastapi import FastAPI
+import transformers
+from fastapi import FastAPI, Request, Response
+from pydantic import BaseModel
+
+app = FastAPI()
+
+@app.get("/")
+def index():
+    return {"message": "Hello World"}
+    
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
+
+
+"""
 import transformers
 from transformers import pipeline
 from fastapi import FastAPI, Request, Response
@@ -52,5 +69,5 @@ if __name__ == "__main__":
 #pipeline = # complete this line with the code to load the pipeline from the local files (path to model directory f
 #translator('fast_api_tutorial/app/model/'+ 'my_awesome_model')
 #pipeline = translator('fast_api_tutorial/app/model/' + 'my_awesome_model') #"translation_en_to_de", model = 'T5-base')
-
+"""
 
