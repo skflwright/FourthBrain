@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 #from fastapi import FastAPI, Request, Response
 from pydantic import BaseModel
-from joblib import load
+
 #import transformers
 
 #load the saved model
@@ -30,7 +30,7 @@ def translate(input_text: TextToTranslate):
     return translator(input_text.input_text)
 
 @app.post("/batch_translation")
-def batch_translation(request: Request):
+def batch_translation(request: TextToTranslate):
     translate_text = request.json()
     translated_text = translator(translate_text['input_text'])
     return translator(translated_text[0])
